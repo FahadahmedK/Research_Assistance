@@ -36,7 +36,7 @@ for year in range(1930, 1940):
     showmore.click()
     year = driver.find_element_by_partial_link_text(str(year))
     year.click()
-    for page in range(2):
+    for page in range(22):
             try:
                 content = driver.find_elements_by_partial_link_text('Financial times historical archive')
                 for i in range((len(content))):
